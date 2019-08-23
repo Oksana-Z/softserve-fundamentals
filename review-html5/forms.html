@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Form</title>
+</head>
+<body>
+    <h1>Forms are important</h1>
+    <p>Congrats! You have a great opportunity to practice forms. It's an example.</p>
+    <p><i>Maybe, you need to go back to the</i> <a href="index.html"><b>main page</b></a></p>
+    <h2>Tell us more, geek</h2>
+    <form action="https://formspree.io/o.zahakailo@gmail.com" method="post">
+        <div>
+            <label for="name">Your name:</label>
+            <input type="text" id="name" name="user_name">
+        </div>
+        <br>
+        <p>Your gender:</p>
+        <div>
+            <input type="radio" name="gender" value="male" checked> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other
+        </div>
+        <br>
+        <div>
+            <p>Your favourite sources:</p>
+            <select name="sources" size="4" multiple>
+                <option value="w3school">w3school.com</option>
+                <option value="mdn">MDN</option>
+                <option value="freecodecamp">Freecodecamp</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <p>Browser, in which you usually work:</p>
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Safari">
+            </datalist>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" name="education" value="bachelor">You have a bachelor degree in programming<br>
+        </div>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Your contacts:</legend>
+            <label>E-mail:
+            <input type="email" id="mail" name="user_mail">
+            </label>
+            <br>
+            <br>
+            <label>Phone:
+            <input type="tel" id="phone" name="user_phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            </label>
+        </fieldset>
+        <br>
+        <div>
+        <label for="msg">Your message:</label>
+        <textarea id="msg" name="user_message" placeholder="Write us your wishes, asks" rows="5" cols="40"></textarea>
+        </div>
+        <br>
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
